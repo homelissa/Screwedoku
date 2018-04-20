@@ -1,11 +1,11 @@
 require "colorize"
 
-puts "MUAHAHA.  The dastardly unexpected end statement.\n".red
-puts "Do NOT try to solve this error by going one method at a time and looking for an 'end'.\n".red
-puts "Instead, comment out half of the bad file at a time until the error changes.  Keep narrowing down from there.".red
-puts ""
-puts "Does this approach feel familiar?  The approach is a version of binary search.\n\n".red
-
+# puts "MUAHAHA.  The dastardly unexpected end statement.\n".red
+# puts "Do NOT try to solve this error by going one method at a time and looking for an 'end'.\n".red
+# puts "Instead, comment out half of the bad file at a time until the error changes.  Keep narrowing down from there.".red
+# puts ""
+# puts "Does this approach feel familiar?  The approach is a version of binary search.\n\n".red
+#
 require_relative "board"
 
 class SudokuGame
@@ -78,8 +78,7 @@ class SudokuGame
   end
 
   def valid_val?(val)
-    val.is_a?(Integer) &&
-      val.between?(0, 9)
+    val.is_a?(Integer) && val.between?(0, 9)
   end
 
   private
